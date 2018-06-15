@@ -1,15 +1,15 @@
 type: chart
 rootfs:
-  - image: samsung_cnct/leah-pipeline-demo
-    context: leah-pipeline-demo
-    chart: leah-pipeline-demo
+  - image: samsung_cnct/pipeline-demo
+    context: pipeline-demo
+    chart: pipeline-demo
     value: image.repository
     dockerContext: .
 configs:
-  - chart: leah-pipeline-demo
+  - chart: pipeline-demo
     timeout: 600
     retries: 2
-    release: leah-pipeline-demo
+    release: pipeline-demo
 test:
   # beforeScript:
   #   image: golang:1.8.3
